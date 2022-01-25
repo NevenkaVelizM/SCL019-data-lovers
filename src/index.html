@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rick and Morty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+     <div class= container>
+            <header>
+                <div class="logo">
+                    <img src="img/logo-rym.png" alt="">
+                </div>              
+        <nav>
+            <a href="#" class="nav-enlace">Bienvenido</a>
+            <a href="#" class="nav-enlace">Personajes</a>
+            <a href="#" class="nav-enlace">Locaciones</a>
+            <a href="#" class="nav-enlace">Episodios</a>
+        </nav>
+        <form action="">
+          <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+        </form>
+      </header> 
+      <main>
+        <div class="box" id="table">
+        </div>
+    
+      </main>
+    </div>
+  
     <script src="main.js" type="module"></script>
-  </body>
+</body>
+
 </html>
