@@ -11,27 +11,45 @@
 <body>
 
      <div class= container>
-            <header>
+          <header>
                 <div class="logo">
                     <img src="img/logo-rym.png" alt="">
-                </div>              
-        <nav>
-            <a href="#" class="nav-enlace">Bienvenido</a>
-            <a href="#" class="nav-enlace">Personajes</a>
-            <a href="#" class="nav-enlace">Locaciones</a>
-            <a href="#" class="nav-enlace">Episodios</a>
-        </nav>
-        <form action="">
-          <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
-        </form>
-      </header> 
-      <main>
-        <div class="box" id="table">
-        </div>
-    
-      </main>
-    </div>
-  
+                </div>                    
+                <div class="categorias" id="categorias">
+                  <div class="categoria activa" data-categoria="personajes"></div>
+                
+                    <p>Personajes</p>
+                  </div>
+                    <div class="categoria" data-categoria="locaciones">
+                      
+                    <p>Locaciones</p>
+                  </div>
+                  <div class="categoria" data-categoria="episodios">
+                  
+                    <p>Episodios</p>
+                  </div>           
+                    <form>
+                      <input type="text" name="search" autocomplete="on" placeholder="Buscar" class="search" id="search">
+                    </form>
+           </header>    
+          <main>   
+            <section class="board-container" id="board-container">
+              <div class="filter-species">
+                <select name="select" id="selectSpecies" class="select-filter">
+                  <option value="specie" selected>SELECCIONE ESPECIE</option>
+                  <option value="Human">HUMANS</option>
+                  <option value="Alien">ALIENS</option>
+                </select>     
+                <select name="selectOrder" id="selectSort" class="select-sort">
+                  <option value="order"selected>ORDENAR</option>
+                  <option value="az">A-Z</option>
+                  <option value="za">Z-A</option>
+                </select>
+                <div class="board" id="board">
+              </div>
+            </section>            
+        </main>    
+      </div> 
     <script src="main.js" type="module"></script>
 </body>
 

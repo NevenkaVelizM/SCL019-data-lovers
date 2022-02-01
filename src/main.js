@@ -1,15 +1,17 @@
+import { filter } from './data.js';
+
 import data from './data/rickandmorty/rickandmorty.js';
 
 let character = data.results;
+let board = document.getElementById("board");
+const select = document.getElementById("selectSpecies")
+select.addEventListener("change", filterBySpecies);
 
-let table = document.getElementById("table");
+window.addEventListener("load", addCharacters(character));
 
-window.addEventListener("load", addAllCharacters(character));
+function addCharacters(character) {
+board.innerHTML = "";
 
-function addAllCharacters(character) {
-
-  table.innerHTML = "";
-  
   for (let i = 0; i < character.length; i++) {
 
     let tarjeta = document.createElement("div");
@@ -18,14 +20,22 @@ function addAllCharacters(character) {
     
     tarjeta.setAttribute("class", "cell"); 
     tarjeta.setAttribute("id", "card"); 
+    
     image.setAttribute("src", character[i].image);
     image.setAttribute("class", "image");
     name.innerHTML = character[i].name;
     
-    
-    table.appendChild(tarjeta);
+    board.appendChild(tarjeta);
     tarjeta.appendChild(image);
-    tarjeta.appendChild(name);
-    
+    tarjeta.appendChild(name); 
   }
 }
+
+function filterBySpecies() {
+  let filterBy = select.value;
+  // data filtrada
+ let species = filter(filterBy, character) 
+  addCharacters(species)
+ }
+           
+
