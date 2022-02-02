@@ -1,11 +1,18 @@
-import { filter } from './data.js';
+import { filter, filterGdr, sort } from './data.js';
 
 import data from './data/rickandmorty/rickandmorty.js';
 
 let character = data.results;
 let board = document.getElementById("board");
+
 const select = document.getElementById("selectSpecies")
 select.addEventListener("change", filterBySpecies);
+
+const selectGdr = document.getElementById("selectGender")
+selectGdr.addEventListener("change", filterByGender);
+
+const selectOrder = document.getElementById("selectSort")
+selectOrder-addEventListener("change", sortAlphabetically);
 
 window.addEventListener("load", addCharacters(character));
 
@@ -34,8 +41,18 @@ board.innerHTML = "";
 function filterBySpecies() {
   let filterBy = select.value;
   // data filtrada
- let species = filter(filterBy, character) 
-  addCharacters(species)
+ let speciesFilter = filter(filterBy, character) 
+  addCharacters(speciesFilter)
  }
            
+ function filterByGender() {
+   let filterByGdr = selectGdr.value;
+   let genderFilter = filterGdr(filterByGdr, character)
+   addCharacters(genderFilter)
+ }
 
+ function sortAlphabetically() {
+   let sortByName = selectOrder.value;
+   let nameSort = sort(sortByName, character)
+   addCharacters(nameSort)
+ }

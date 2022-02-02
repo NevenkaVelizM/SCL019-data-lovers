@@ -6,6 +6,10 @@
   <title>Rick and Morty</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -39,12 +43,18 @@
                   <option value="specie" selected>SELECCIONE ESPECIE</option>
                   <option value="Human">HUMANS</option>
                   <option value="Alien">ALIENS</option>
-                </select>     
+                </select>    
+                <select name="selectGdr" id="selectGender" class="select-gender">
+                  <option value="gender" selected>SELECCIONE GENERO</option>
+                  <option value="Female">FEMALE</option>
+                  <option value="Male">MALE</option>
+                </select>    
                 <select name="selectOrder" id="selectSort" class="select-sort">
                   <option value="order"selected>ORDENAR</option>
                   <option value="az">A-Z</option>
                   <option value="za">Z-A</option>
                 </select>
+        
                 <div class="board" id="board">
               </div>
             </section>            
