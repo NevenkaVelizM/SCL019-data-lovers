@@ -3,56 +3,57 @@ import { filter, filterGdr, sort } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
 
 let character = data.results;
-let board = document.getElementById("board");
 
-const select = document.getElementById("selectSpecies")
-select.addEventListener("change", filterBySpecies);
+const selectSpecies = document.getElementById("select-species")
+selectSpecies.addEventListener("change", filterBySpecies);
 
-const selectGdr = document.getElementById("selectGender")
-selectGdr.addEventListener("change", filterByGender);
+const selectGender = document.getElementById("select-gender")
+selectGender.addEventListener("change", filterByGender);
 
-const selectOrder = document.getElementById("selectSort")
-selectOrder-addEventListener("change", sortAlphabetically);
+const selectOrder = document.getElementById("select-sort")
+selectOrder.addEventListener("change", sortAlphabetically);
 
-window.addEventListener("load", addCharacters(character));
+window.addEventListener("load", allCharacters(character));
 
-function addCharacters(character) {
-board.innerHTML = "";
+function allCharacters(character) {
+  let board = document.getElementById("board");
+  board.innerHTML = "";
 
   for (let i = 0; i < character.length; i++) {
 
-    let tarjeta = document.createElement("div");
+    let card = document.createElement("div");
     let image = document.createElement("img");
     let name = document.createElement("p");
     
-    tarjeta.setAttribute("class", "cell"); 
-    tarjeta.setAttribute("id", "card"); 
+    card.setAttribute("class", "card"); 
+    card.setAttribute("id", "file"); 
     
     image.setAttribute("src", character[i].image);
     image.setAttribute("class", "image");
     name.innerHTML = character[i].name;
     
-    board.appendChild(tarjeta);
-    tarjeta.appendChild(image);
-    tarjeta.appendChild(name); 
+    board.appendChild(card);
+    card.appendChild(image);
+    card.appendChild(name); 
+
   }
 }
 
 function filterBySpecies() {
-  let filterBy = select.value;
+  let filterBy = selectSpecies.value;
   // data filtrada
  let speciesFilter = filter(filterBy, character) 
-  addCharacters(speciesFilter)
+  allCharacters(speciesFilter)
  }
            
  function filterByGender() {
-   let filterByGdr = selectGdr.value;
+   let filterByGdr = selectGender.value;
    let genderFilter = filterGdr(filterByGdr, character)
-   addCharacters(genderFilter)
+   allCharacters(genderFilter)
  }
 
  function sortAlphabetically() {
    let sortByName = selectOrder.value;
    let nameSort = sort(sortByName, character)
-   addCharacters(nameSort)
+   allCharacters(nameSort)
  }

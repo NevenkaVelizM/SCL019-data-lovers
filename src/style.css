@@ -6,7 +6,9 @@
 }
 
 body {
-  background: url(img/background-rickandmorty.jpg);
+  background: url(img/background-rickandmorty.jpg) center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container {
@@ -17,20 +19,20 @@ body {
 
 /* Header */
 
-header .logo {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 100px;
+.img-logo {
+  height: 210px;
+	display: block;
+  margin: auto;
 }
 
 .search {
-  width: 30%;
-  height: 40px;
-  line-height: 40px;
+  width: 20%;
+  height: 30px;
+  line-height: 430px;
   background: white;
   padding: 0 20px;
   border-radius: 15px;
-  font-size: 16px;
+  font-size: 15px;
   margin: 20px 0px;
   
 }
@@ -40,29 +42,24 @@ header .logo {
   cursor: pointer;
 }
 
-.nav-enlace {
-  font-size: 25px;
-  color: white;
-}
-
 .board {
   width: 100%;
-  height: auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  margin-top: 30px;
 }
 
-.cell {
-  width: 20%;
+.card {
+  width: 180px;
+  height: 200px;
   text-align: center;
   background: rgb(18, 194, 170);
   border-radius: 10px;
-  padding: 10px;
   margin: 20px;
+ 
 }
 
-.cell:hover {
+.card:hover {
   cursor: pointer;
   border: 2px solid rgb(15, 99, 110);
   transform: scale(1.1); 
@@ -70,15 +67,12 @@ header .logo {
 }
 
 .image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height: auto;
+  margin-top: 10px;
+  width: 60%;
   border-radius: 50%;
 }
 
-.filter-board {
-  font-size: 20px;
-  color: white;
+p {
+  margin: 10px 15px;
+  font-size: 18px;
 }
