@@ -9,15 +9,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-
      <div class= container>
           <header>
-                <div class="logo">
-                    <img src="img/logo-rym.png" alt="">
-                </div>                    
+
+                <img src="img/logo-rym.png" class="img-logo">
+                                 
                 <div class="categorias" id="categorias">
                   <div class="categoria activa" data-categoria="personajes"></div>
                 
@@ -37,17 +37,23 @@
            </header>    
           <main>   
             <section class="board-container" id="board-container">
-              <div class="filter-species">
-                <select name="select" id="selectSpecies" class="select-filter">
+              <div class="select">
+                <select name="selectSpecies" id="select-species" class="select-species">
                   <option value="specie" selected>SELECCIONE ESPECIE</option>
                   <option value="Human">HUMANS</option>
                   <option value="Alien">ALIENS</option>
-                </select>     
-                <select name="selectOrder" id="selectSort" class="select-sort">
+                </select>    
+                <select name="selectGender" id="select-gender" class="select-gender">
+                  <option value="gender" selected>SELECCIONE GENERO</option>
+                  <option value="Female">FEMALE</option>
+                  <option value="Male">MALE</option>
+                </select>    
+                <select name="selectOrder" id="select-sort" class="select-sort">
                   <option value="order"selected>ORDENAR</option>
                   <option value="az">A-Z</option>
                   <option value="za">Z-A</option>
                 </select>
+        
                 <div class="board" id="board">
               </div>
             </section>            
@@ -57,4 +63,3 @@
 </body>
 
 </html>
-
