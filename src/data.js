@@ -1,4 +1,3 @@
-
 export const filter = (filterBy, character) => {
 
   let filteredSpecies;
@@ -16,6 +15,8 @@ export const filter = (filterBy, character) => {
 
 }
 
+
+
 export const filterGdr = (filterByGdr, character) => {
 
 let filteredGender;
@@ -23,7 +24,7 @@ let filteredGender;
 if (filterByGdr == "gender") {
   filteredGender = character; 
 
-}else{
+} else {
   filteredGender = character.filter(element => {
     return element.gender.includes(filterByGdr);
 
@@ -31,6 +32,8 @@ if (filterByGdr == "gender") {
 }
 return filteredGender;
 }
+
+
 
 export const sort = (sortByName, character) => {
 
@@ -49,3 +52,7 @@ if (sortByName == "az") {
 }
 return sorteredName; 
 }
+
+
+
+

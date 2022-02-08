@@ -15,10 +15,22 @@ selectOrder.addEventListener("change", sortAlphabetically);
 
 window.addEventListener("load", allCharacters(character));
 
+export const getHumanPercentage = (character) => {
+
+  let filterBySpecie = "Human"
+  
+  let totalHuman = filterSpecies(filterBySpecie, character)
+
+  let totalCharacter = character.length;
+  return (totalHuman / totalCharacter)*100;  
+};
+
+
 function allCharacters(character) {
   let board = document.getElementById("board");
   board.innerHTML = "";
 
+  
   for (let i = 0; i < character.length; i++) {
 
     let card = document.createElement("div");
@@ -57,3 +69,4 @@ function filterBySpecies() {
    let nameSort = sort(sortByName, character)
    allCharacters(nameSort)
  }
+
