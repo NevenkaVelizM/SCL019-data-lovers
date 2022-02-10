@@ -61,6 +61,7 @@ export const searchBy = (searchByName, character) => {
 
 };
 
+
 // Cálculo agregado (porcentaje de humanos y aliens)
 export const getHumanPercentage = (character) => {
 
