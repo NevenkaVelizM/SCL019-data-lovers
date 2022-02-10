@@ -1,3 +1,4 @@
+// Filtros por especies y género 
 export const filterSpecies = (filterBySpecie, character) => {
 
     let filteredSpecies;
@@ -32,7 +33,7 @@ export const filterGenders= (filterByGender, character) => {
   return filteredGender;
 }
 
-
+// Orden alfabetico (ascendente-descendente)
 export const sort = (sortByName, character) => {
 
   let sorteredName;
@@ -42,7 +43,7 @@ export const sort = (sortByName, character) => {
       return (a.name < b.name) ? -1 : 1 
     });
   
-  }else { 
+  } else { 
     (sortByName == "za") 
       sorteredName = character.sort((a, b) => {
         return (a.name > b.name) ? -1 : 1
@@ -51,7 +52,16 @@ export const sort = (sortByName, character) => {
   return sorteredName; 
 }
 
- 
+// Buscar por nombre de personaje 
+export const searchBy = (searchByName, character) => {
+  
+  let nameSearch = (character) => character.name.toLowerCase().includes(searchByName.toLowerCase());
+  let searchCharacter = character.filter(nameSearch);
+  return searchCharacter;
+
+};
+
+// Cálculo agregado (porcentaje de humanos y aliens)
 export const getHumanPercentage = (character) => {
 
   let filterBySpecie = "Human";
@@ -75,8 +85,5 @@ export const getAlienPercentage = (character) => {
   return ((totalAlien / totalCharacter)*100).toFixed(0);
 };
   
-
-
-
 
 

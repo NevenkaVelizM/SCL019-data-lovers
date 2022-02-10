@@ -1,6 +1,6 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0em;
+  margin: 0em;
   box-sizing: border-box;
   font-family: 'Sedgwick Ave', cursive;
 }
@@ -12,51 +12,121 @@ body {
 }
 
 .container {
-  max-width: 1000px; 
+  max-width: 62.5em; 
   width: 90%;
   margin: auto;
 }
 
 .img-logo {
-  height: 160px;
+  height: 10em;
 	display: block;
   margin: auto;
 }
 
+h2 {
+  color: #EBE645;
+  font-size: 1.875em;
+  text-align: center;
+  margin: 1.25em 0em;
+}
 
+header form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.625em;
+}
 
-.search {
+header .search {
   width: 60%;
-  height: 30px;
-  line-height: 40px;
+  height: 40px;
+  line-height: 2.5em;
   background: white;
-  padding: 0 20px;
-  border-radius: 10px;
+  padding: 0 1.25em;
+  border-radius: 0.625em;
   border: none;
-  font-size: 15px;
-  margin: 20px 0px;
-  
+  font-size: 0.9375em;
+  margin: 1.25em 0em;
 }
 
 .search:hover {
-  border: 2px solid rgb(220, 243, 10);
+  border: 0.125em solid rgb(220, 243, 10);
   cursor: pointer;
 }
+
+.bar-container {
+  background: rgb(18, 194, 170);
+  border-radius: 0.3125em;
+	display: flex;
+	align-items: center;
+	min-height: 50px;
+	
+}
+
+.select-species {
+  font-size: 15px;
+  position: relative;
+  left: 40px;
+  align-items: center;
+  text-align: center;
+  border: none;
+  background-color: rgb(18, 194, 170);
+  padding: 10px;
+
+
+}
+
+.select-gender {
+  font-size: 15px;
+  position: relative;
+  left: 70px;
+  align-items: center;
+  text-align: center;
+  border: none;
+  background-color: rgb(18, 194, 170);
+  padding: 10px;
+ 
+
+}
+.select-sort {
+  font-size: 15px;
+  position: relative;
+  left: 100px;
+  align-items: center;
+  text-align: center;
+  border: none;
+  background-color: rgb(18, 194, 170);
+  padding: 10px;
+
+}
+
+.compute {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  left: 180px;
+  white-space:pre-line;
+}
+
+.compute i  {
+  position: relative;
+
+}
+
 
 .board {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  margin-top: 25px;
-  border-radius: 10px;
+  margin-top: 50px;
 }
 
 .card {
-  width: 180px;
-  height: 220px;
+  width: 11.25em;
+  height: 13.75em;
   background: rgb(18, 194, 170);
-  border-radius: 10px;
-  margin-top: 20px;
+  border-radius: 0.625em;
+  margin-top: 1.25em;
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
@@ -65,7 +135,7 @@ body {
 
 .card:hover { 
   cursor: pointer; 
-  border: 2px solid rgb(220, 243, 10); 
+  border: 0.125em solid rgb(220, 243, 10); 
   transform: rotateY(180deg); 
 }
 
@@ -78,7 +148,7 @@ body {
 }
 
 .imageFront {
-  margin: 15px 0px;
+  margin: 0.9375em 0em;
   width: 60%;
   border-radius: 50%;
 }
@@ -88,33 +158,58 @@ body {
   height: 100%;
   position: absolute;
   top: 0;
-  padding: 20px;
+  padding: 1.25em;
   transform: rotateY(180deg);
   backface-visibility: hidden;  
 }
 
 .cardBack p {
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375em;
+  line-height: 1.5625em;
 }
 
-.compute {
+
+footer .social-networks {
+  margin-top: 1.875em;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+	align-content: center;
+	justify-content: center;
 
 }
 
-.board-container {
-  display: flex;
-  flex-flow: row wrap;  
+footer .social-networks a{
+  display: block;
+	color: black;
+	margin: 1.25em;
+	text-align: center;
 }
 
-footer {
-  display: flex;
-  flex-flow: row wrap;
-  
+footer .social-networks a i {
+	font-size: 1.875em;
+	line-height: 3.75em;
+}
+
+.social-networks p {
+  text-align: center;
+	margin-bottom: 2.5em;
+	font-size: 1.125em;
 }
 
 
+@media (max-width: 1200px) {
+  body {
+    font-size: 0.875em;
+  }
+}
 
+@media (max-width: 780px) {
+  body {
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 0.75em;
+  }
+}
