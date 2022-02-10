@@ -1,13 +1,13 @@
-export const filter = (filterBy, character) => {
+export const filterSpecies = (filterBySpecie, character) => {
 
   let filteredSpecies;
 
-  if (filterBy == "specie") {
+  if (filterBySpecie == "specie") {
     filteredSpecies = character;
 
   } else {
     filteredSpecies = character.filter(element => {
-      return element.species.includes(filterBy);
+      return element.species.includes(filterBySpecie);
     });
   }
 
@@ -15,24 +15,22 @@ export const filter = (filterBy, character) => {
 
 }
 
-
-
-export const filterGdr = (filterByGdr, character) => {
+ 
+export const filterGenders= (filterByGender, character) => {
 
 let filteredGender;
 
-if (filterByGdr == "gender") {
+if (filterByGender == "gender") {
   filteredGender = character; 
 
 } else {
   filteredGender = character.filter(element => {
-    return element.gender.includes(filterByGdr);
+    return element.gender.includes(filterByGender);
 
   });
 }
 return filteredGender;
 }
-
 
 
 export const sort = (sortByName, character) => {
@@ -44,7 +42,7 @@ if (sortByName == "az") {
     return (a.name < b.name) ? -1 : 1 
   });
 
-}else{ 
+}else { 
   (sortByName == "za") 
     sorteredName = character.sort((a, b) => {
       return (a.name > b.name) ? -1 : 1
@@ -52,6 +50,33 @@ if (sortByName == "az") {
 }
 return sorteredName; 
 }
+
+
+export const getHumanPercentage = (character) => {
+
+let filterBySpecie = "Human";
+
+let totalHuman = filterSpecies(filterBySpecie, character);
+totalHuman = totalHuman.length;
+
+let totalCharacter = character.length;
+
+return ((totalHuman / totalCharacter)*100).toFixed(0);
+};
+
+export const getAlienPercentage = (character) => {
+
+let filterBySpecie = "Alien";
+
+let totalAlien = filterSpecies(filterBySpecie, character);
+totalAlien = totalAlien.length;
+let totalCharacter = character.length;
+
+return ((totalAlien / totalCharacter)*100).toFixed(0);
+};
+  
+
+
 
 
 

@@ -9,87 +9,61 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/4ce6098d8e.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
      <div class= container>
           <header>
-
-                <img src="img/logo-rym.png" class="img-logo">
-                                 
-                <div class="categorias" id="categorias">
-                  <div class="categoria activa" data-categoria="personajes"></div>
-                
-                    <p>Personajes</p>
-                  </div>
-                    <div class="categoria" data-categoria="locaciones">
-                      
-                    <p>Locaciones</p>
-                  </div>
-                  <div class="categoria" data-categoria="episodios">
-                  
-                    <p>Episodios</p>
-                  </div>           
-                    <form>
-                      <input type="text" name="search" autocomplete="on" placeholder="Buscar" class="search" id="search">
+                <img src="img/logo-rym.png" class="img-logo"> 
+                 <h2>¡ Meet the characters !</h2>                             
+                    <form action="">
+                      <input type="text" name="search" autocomplete="off" placeholder="search by name of character" class="search" id="search">
                     </form>
            </header>    
           <main>   
             <section class="board-container" id="board-container">
               <div class="select">
-                <select name="selectSpecies" id="select-species" class="select-species">
-                  <option value="specie" selected>SELECCIONE ESPECIE</option>
-                  <option value="Human">HUMANS</option>
-                  <option value="Alien">ALIENS</option>
-                </select>    
-                <select name="selectGender" id="select-gender" class="select-gender">
-                  <option value="gender" selected>SELECCIONE GENERO</option>
-                  <option value="Female">FEMALE</option>
-                  <option value="Male">MALE</option>
-                </select>    
-                <select name="selectOrder" id="select-sort" class="select-sort">
-                  <option value="order"selected>ORDENAR</option>
-                  <option value="az">A-Z</option>
-                  <option value="za">Z-A</option>
-                </select>
-                <div class="compute-stats" id="compute-stats">
-                  <p class="status" id="status">STATUS : <span class="Alive">ALIVE</span> <span class="Dead">DEAD</span></p>
-
-                <div class="board" id="board">
+                  <select name="selectSpecies" id="select-species" class="select-species">
+                    <option value="specie" selected>SELECT SPECIE</option>
+                    <option value="Human">HUMAN</option>
+                    <option value="Alien">ALIEN</option>
+                    <option value="Humanoid">HUMANOID</option>
+                    <option value="Animal">ANIMAL</option>
+                    <option value="Robot">ROBOT</option>
+                    <option value="Mytholog">MYTHOLOG</option>
+                    <option value="Vampire">VAMPIRE</option>
+                  </select>    
+                  <select name="selectGender" id="select-gender" class="select-gender">
+                    <option value="gender" selected>SELECT GENDER</option>
+                    <option value="Female">FEMALE</option>
+                    <option value="Male">MALE</option>
+                    <option value="unknown">UNKNOWN</option>
+                  </select>    
+                  <select name="selectOrder" id="select-sort" class="select-sort">
+                    <option value="order"selected>SORT BY NAME</option>
+                    <option value="az">A-Z</option>
+                    <option value="za">Z-A</option>
+                  </select>
               </div>
-            </section>            
+                  <div class="compute" id="compute">
+                    <p class="specie" id="specie">SPECIES : </p>
+                    <i class="fas fa-male"></i>
+                    <p class="Human"> HUMANS :<span id="compute-human"></span>%</p>
+                      <i class="fab fa-reddit-alien"></i>
+                    <p class="Alien"> ALIENS :<span id="compute-alien"></span>%</p>                  
+                  </div>               
+            </section> 
+                <div class="board" id="board">
+              </div>              
         </main>    
       </div> 
+      <footer>     
+          <p>Follow Rick and Morty</p>      
+            <a  href="https://es-la.facebook.com/RickandMorty/" class="facebook"><i class="fab fa-facebook-square"></i>
+            <a  href="https://www.instagram.com/rickandmorty/?hl=es" class="instagram"><i class="fab fa-instagram-square"></i>
+            <a href="https://twitter.com/RickandMorty?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><i class="fab fa-twitter-square"></i>       
+      </footer>
     <script src="main.js" type="module"></script>
-    <footer class="pie-pagina">
-      <div class="grupo-1">
-        <div class="box">
-          <figure>
-            <a href="#">
-              <img src="https://miro.medium.com/max/1200/1*1hXBtGyNQ5GGZZNPBIqLjw.jpeg" alt="">
-            </a>
-          </figure>
-        </div>
-        <div class="box">
-          <h2>SOBRE NOSOTROS</h2>
-          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapie</P>
-          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapie</P>
-        </div>
-        <div class="box">
-          <h2>SIGUENOS</h2>
-          <div class="red-social">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-          </div>
-        </div>
-        
-
-      </div>
-    
-    </footer>
 </body>
 
 </html>
