@@ -22,7 +22,8 @@
                     </form>
            </header>    
           <main>   
-            <section class="bar-container" id="bar-container">
+            <section>
+            <div class="bar-container" id="bar-container">
                   <select name="selectSpecies" id="select-species" class="select-species">
                     <option value="specie" selected>SELECT SPECIE</option>
                     <option value="Human">HUMAN</option>
@@ -45,13 +46,11 @@
                     <option value="za">Z-A</option>
                   </select>
              
-                  <div class="compute" id="compute">
-                    <p class="specie" id="specie"></p>
-                    
+                  <div class="compute" id="compute">  
                     <p class="human"> HUMANS:<i class="fas fa-male"></i><span id="compute-human"></span>%</p>-         
-                    <p class="alien"> ALIENS:<i class="fab fa-reddit-alien"></i><span id="compute-alien"></span>%</p>
-                                     
-                  </div>               
+                    <p class="alien"> ALIENS:<i class="fab fa-reddit-alien"></i><span id="compute-alien"></span>%</p>                   
+                  </div>   
+            </div>            
             </section> 
                 <div class="board" id="board">
               </div>              
@@ -59,9 +58,9 @@
       </div> 
       <footer class="social-networks">     
           <p>Follow Rick and Morty</p>      
-          <i class="fab fa-facebook-square"><a href="https://es-la.facebook.com/RickandMorty/" class="facebook"></a></i>
-            <i class="fab fa-instagram-square"><a href="https://www.instagram.com/rickandmorty/?hl=es" class="instagram"></a></i>
-              <i class="fab fa-twitter-square"><a href="https://twitter.com/RickandMorty?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"></a></i>
+          <a href="https://es-la.facebook.com/RickandMorty/" class="facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/rickandmorty/?hl=es" class="instagram"><i class="fab fa-instagram-square"></i></a>
+              <a href="https://twitter.com/RickandMorty?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><i class="fab fa-twitter-square"></i></a>
         
       </footer>
     <script src="main.js" type="module"></script>

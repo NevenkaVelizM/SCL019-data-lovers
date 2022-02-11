@@ -17,6 +17,7 @@
 
 ## 1. Resumen del proyecto
 
+
 En este proyecto se solicito construir una página web para visualizar un
 conjunto (set) de datos, que se adecuara a lo que descubriesemos que el 
 usuario requería. 
@@ -27,15 +28,20 @@ Dentro de los datos propuestos, elegimos el set de Rick and Morty, el cual
 nos proporcionaba la lista de personajes de la serie. 
 
 
+
 ## 2. Historias de Usuario 
+
 
 De acuerdo a la investigación entregada, la cual se basa en los seguidores 
 de Rick and Morty; realizamos nuestras 4 Historias de usuario, éstas cuentan con 
 criterios de aceptación y definición de terminado. 
 
+
 ![Alt historias-de-usuario3-4](src/img/historias-de-usuario3-4.png)
 
+
 ![Alt historias-de-usuario1-2](src/img/historias-de-usuario1-2.png)
+
 
 
 ## 3. Diseño de la Interfaz de Usuario
@@ -43,18 +49,24 @@ criterios de aceptación y definición de terminado.
 
 ### 3.1 Prototipo de baja fidelidad
 
+
 ![Alt prototipos-baja-fidelidad](src/img/prototipos-baja-fidelidad.png)
 
+
+
 ### 3.2 Prototipo de alta fidelidad
+
 
 ![Alt prototipos-iniciales-alta-fidelidad](src/img/prototipos-iniciales-alta-fidelidad.png)
 
 ![Alt cambios-de-prototipos](src/img/cambios-de-prototipos.png)
 
 
+
 ### 3.3 Testeos de usabilidad 
 
-Se realizaron encuestas personalizadas de usabilidad(Feedback compañeras) con distintos usuarios, 
+
+Se realizaron encuestas personalizadas de usabilidad (Feedback compañeras) con distintos usuarios, 
 a través de ellas se detecto: 
 
 - En el primer prototipo de alta fidelidad, el logo(imagen) elegido, no era legible para el usuario.
@@ -74,10 +86,15 @@ por lo tanto, se cambia a otro estilo de fuente proveniente de Google fonts.
 
 ### 3.4 Diseño final y responsive de UI
 
+
 ![Alt prototipos-baja-fidelidad](src/img/diseno-final.png)
+
+![Alt prototipos-baja-fidelidad](src/img/responsive.png)
+
 
 
 ## 4. Pruebas unitarias (unit tests)
+
 
 ![Alt pruebas-unitarias](src/img/pruebas-unitarias.png)
 
