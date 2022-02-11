@@ -32,9 +32,9 @@ De acuerdo a la investigación entregada, la cual se basa en los seguidores
 de Rick and Morty; realizamos nuestras 4 Historias de usuario, éstas cuentan con 
 criterios de aceptación y definición de terminado. 
 
-![Alt historias-de-usuario1-2](src/img/historias-de-usuario1-2.png)
-
 ![Alt historias-de-usuario3-4](src/img/historias-de-usuario3-4.png)
+
+![Alt historias-de-usuario1-2](src/img/historias-de-usuario1-2.png)
 
 
 ## 3. Diseño de la Interfaz de Usuario
