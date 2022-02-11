@@ -45,9 +45,9 @@ criterios de aceptación y definición de terminado.
 
 ### 3.2 Prototipo de alta fidelidad
 
-![Alt prototipos-iniciales-alta-fidelidad](src/img/prototipos-iniciales-alta-fidelidad.png.png)
-
 ![Alt cambios-de-prototipos](src/img/cambios-de-prototipos.png)
+
+![Alt prototipos-iniciales-alta-fidelidad](src/img/prototipos-iniciales-alta-fidelidad.png)
 
 ### 3.3 Testeos de usabilidad 
 
