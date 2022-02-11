@@ -61,6 +61,7 @@ return searchCharacter;
 
 };
 
+
 // Cálculo agregado (porcentaje de humanos y aliens)
 export const getHumanPercentage = (character) => {
 

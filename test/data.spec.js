@@ -1,4 +1,4 @@
-import { filterSpecies, filterGenders, sort } from '../src/data.js';
+import { filterSpecies, filterGenders, sort, searchBy } from '../src/data.js';
 
 const characterTest = [
   {name:"Rick Sanchez", id: 1, species: "Human", gender: "Male"}, 
@@ -85,3 +85,15 @@ describe('sort az, za', () => {
       {name:"Abadango Cluster Princess", id: 3, species: "Alien", gender: "Female"}]); 
   });
 });
+
+describe('search by name', () => {
+
+  it('is a function', () => {
+    expect(typeof searchBy).toBe('function');
+  });
+
+  it('return `Rick Sanchez`', () => {
+    expect(searchBy("Rick Sanchez", characterTest)).toEqual([
+      {name:"Rick Sanchez", id: 1, species: "Human", gender: "Male"}]);
+    });
+  });

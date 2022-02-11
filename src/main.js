@@ -39,7 +39,6 @@ const search = document.getElementById("search")
    allCharacters(searchCharacters)
  });
 
-
 const computeHuman  = document.getElementById("compute-human")
 computeHuman.innerHTML = getHumanPercentage(character);
 
