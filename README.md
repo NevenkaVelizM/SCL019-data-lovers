@@ -20,6 +20,7 @@
 En este proyecto se solicito construir una página web para visualizar un
 conjunto (set) de datos, que se adecuara a lo que descubriesemos que el 
 usuario requería. 
+
 Como entregable final logramos una página web que permite visualizar la data,
 filtrar, ordenar y se obtuvo un cálculo agregado. 
 Dentro de los datos propuestos, elegimos el set de Rick and Morty, el cual 
