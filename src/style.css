@@ -3,6 +3,7 @@
   margin: 0em;
   box-sizing: border-box;
   font-family: 'Sedgwick Ave', cursive;
+
 }
 
 body {
@@ -104,15 +105,17 @@ header .search {
   display: flex;
   flex-flow: row wrap;
   position: relative;
-  left: 180px;
+  left: 150px;
   white-space:pre-line;
+  word-spacing: 4px;
+  letter-spacing: 5px;
+  
 }
 
 .compute i  {
   position: relative;
-
+  
 }
-
 
 .board {
   display: flex;
@@ -169,47 +172,15 @@ header .search {
 }
 
 
-footer .social-networks {
-  margin-top: 1.875em;
-  display: flex;
-	align-content: center;
-	justify-content: center;
-
-}
-
-footer .social-networks a{
-  display: block;
-	color: black;
-	margin: 1.25em;
-	text-align: center;
-}
-
-footer .social-networks a i {
-	font-size: 1.875em;
-	line-height: 3.75em;
-}
-
-.social-networks p {
-  text-align: center;
-	margin-bottom: 2.5em;
-	font-size: 1.125em;
+footer{
+    margin-top: 1.875em;
+    padding: 25px 0px;
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    background-color: #07b8af;
+    text-align: center;
+    opacity: 70%;
+    
 }
 
 
-@media (max-width: 1200px) {
-  body {
-    font-size: 0.875em;
-  }
-}
-
-@media (max-width: 780px) {
-  body {
-    font-size: 0.75em;
-  }
-}
-
-@media (max-width: 450px) {
-  body {
-    font-size: 0.75em;
-  }
-}

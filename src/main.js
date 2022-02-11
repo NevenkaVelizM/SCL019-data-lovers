@@ -95,11 +95,3 @@ function allCharacters(character) {
   }
 }
 
-
-
-           
-
-
-
- 
- 
