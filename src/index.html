@@ -9,10 +9,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4ce6098d8e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+  
 </head>
 <body>
-     <div class= container>
+     <div class="container">
           <header>
                 <img src="img/logo-rym.png" class="img-logo"> 
                  <h2>¡ Meet the characters !</h2>                             
@@ -21,8 +22,7 @@
                     </form>
            </header>    
           <main>   
-            <section class="board-container" id="board-container">
-              <div class="select">
+            <section class="bar-container" id="bar-container">
                   <select name="selectSpecies" id="select-species" class="select-species">
                     <option value="specie" selected>SELECT SPECIE</option>
                     <option value="Human">HUMAN</option>
@@ -34,34 +34,35 @@
                     <option value="Vampire">VAMPIRE</option>
                   </select>    
                   <select name="selectGender" id="select-gender" class="select-gender">
-                    <option value="gender" selected>SELECT GENDER</option>
+                    <option value="gender">SELECT GENDER</option>
                     <option value="Female">FEMALE</option>
                     <option value="Male">MALE</option>
                     <option value="unknown">UNKNOWN</option>
                   </select>    
                   <select name="selectOrder" id="select-sort" class="select-sort">
-                    <option value="order"selected>SORT BY NAME</option>
+                    <option value="order">SORT BY NAME</option>
                     <option value="az">A-Z</option>
                     <option value="za">Z-A</option>
                   </select>
-              </div>
+             
                   <div class="compute" id="compute">
-                    <p class="specie" id="specie">SPECIES : </p>
-                    <i class="fas fa-male"></i>
-                    <p class="Human"> HUMANS :<span id="compute-human"></span>%</p>
-                      <i class="fab fa-reddit-alien"></i>
-                    <p class="Alien"> ALIENS :<span id="compute-alien"></span>%</p>                  
+                    <p class="specie" id="specie"></p>
+                    
+                    <p class="human"> HUMANS:<i class="fas fa-male"></i><span id="compute-human"></span>%</p>-         
+                    <p class="alien"> ALIENS:<i class="fab fa-reddit-alien"></i><span id="compute-alien"></span>%</p>
+                                     
                   </div>               
             </section> 
                 <div class="board" id="board">
               </div>              
         </main>    
       </div> 
-      <footer>     
+      <footer class="social-networks">     
           <p>Follow Rick and Morty</p>      
-            <a  href="https://es-la.facebook.com/RickandMorty/" class="facebook"><i class="fab fa-facebook-square"></i>
-            <a  href="https://www.instagram.com/rickandmorty/?hl=es" class="instagram"><i class="fab fa-instagram-square"></i>
-            <a href="https://twitter.com/RickandMorty?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><i class="fab fa-twitter-square"></i>       
+          <i class="fab fa-facebook-square"><a href="https://es-la.facebook.com/RickandMorty/" class="facebook"></a></i>
+            <i class="fab fa-instagram-square"><a href="https://www.instagram.com/rickandmorty/?hl=es" class="instagram"></a></i>
+              <i class="fab fa-twitter-square"><a href="https://twitter.com/RickandMorty?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"></a></i>
+        
       </footer>
     <script src="main.js" type="module"></script>
 </body>

@@ -1,4 +1,4 @@
-import { filterSpecies, filterGenders, sort, getHumanPercentage, getAlienPercentage } from './data.js';
+import { filterSpecies, filterGenders, sort, searchBy, getHumanPercentage, getAlienPercentage } from './data.js';
 
 import data from './data/rickandmorty/rickandmorty.js';
 
@@ -7,11 +7,38 @@ let character = data.results;
 const selectSpecies = document.getElementById("select-species")
 selectSpecies.addEventListener("change", filteredBySpecies);
 
+function filteredBySpecies() {
+  let filterBySpecie = selectSpecies.value;
+  let speciesFilter = filterSpecies(filterBySpecie, character) 
+  allCharacters(speciesFilter)
+ }
+
 const selectGender = document.getElementById("select-gender")
 selectGender.addEventListener("change", filteredByGenders);
 
+function filteredByGenders() {
+  let filterByGender = selectGender.value;
+  let genderFilter = filterGenders(filterByGender, character)
+  allCharacters(genderFilter)
+}
+
 const selectOrder = document.getElementById("select-sort")
 selectOrder.addEventListener("change", sortAlphabetically);
+
+function sortAlphabetically() {
+  let sortByName = selectOrder.value;
+  let nameSort = sort(sortByName, character)
+  allCharacters(nameSort)
+}
+
+const search = document.getElementById("search")
+ search.addEventListener("keyup", (e) => {
+   
+   let searchByName = e.target.value;
+   let searchCharacters = searchBy(searchByName, character);
+   allCharacters(searchCharacters)
+ });
+
 
 const computeHuman  = document.getElementById("compute-human")
 computeHuman.innerHTML = getHumanPercentage(character);
@@ -21,7 +48,6 @@ computeAlien.innerHTML = getAlienPercentage(character);
 
 
 window.addEventListener("load", allCharacters(character));
-
 
 function allCharacters(character) {
   let board = document.getElementById("board");
@@ -69,25 +95,4 @@ function allCharacters(character) {
     
   }
 }
-
-function filteredBySpecies() {
-  // se obtiene el valor de las opciones del select
-  let filterBySpecie = selectSpecies.value;
-  // data filtrada por especie
- let speciesFilter = filterSpecies(filterBySpecie, character) 
- // se muestra la data filtrada
-  allCharacters(speciesFilter)
- }
-           
- function filteredByGenders() {
-   let filterByGender = selectGender.value;
-   let genderFilter = filterGenders(filterByGender, character)
-   allCharacters(genderFilter)
- }
-
- function sortAlphabetically() {
-   let sortByName = selectOrder.value;
-   let nameSort = sort(sortByName, character)
-   allCharacters(nameSort)
- }
 
