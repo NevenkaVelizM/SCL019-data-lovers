@@ -38,7 +38,8 @@ criterios de aceptación y definición de terminado.
 
 
 ## 3. Diseño de la Interfaz de Usuario
- 
+
+
 ### 3.1 Prototipo de baja fidelidad
 
 ![Alt prototipos-baja-fidelidad](src/img/prototipos-baja-fidelidad.png)
@@ -69,8 +70,10 @@ se adapta al idioma correspondiente de la data proporcionada.
 por lo tanto, se cambia a otro estilo de fuente proveniente de Google fonts.
 
 
+
 ### 3.4 Diseño final y responsive de UI
 
+![Alt prototipos-baja-fidelidad](src/img/diseno-final.png)
 
 
 ## 4. Pruebas unitarias (unit tests)
